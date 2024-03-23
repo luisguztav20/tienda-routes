@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import {colors} from "./theme"
 
 
 export const Button = styled.button`
-    background-color: #373739;
-    color: #EFF3F5;
+    background-color: ${colors.secondary};
+    color: ${colors.font};
     border-style: none;
     padding: 10px 15px;
     font-weight: bold;
@@ -14,12 +15,12 @@ export const Button = styled.button`
 
 export const Header = styled.header`
     display: flex;
-    background-color: #19191a;
+    background-color: ${colors.header};
     flex-direction: row;
     align-content: center;
     padding: 10px;
     justify-content: space-around;
-    color: #EFF3F5;
+    color: ${colors.font};
     align-items: center;
     img{
         width: 50px;
@@ -29,13 +30,13 @@ export const Header = styled.header`
 `;
 
 export const StyledLink = styled(Link)`
-    color: #EFF3F5;
+    color: ${colors.font};
 `;
 
 export const BtnLink = styled.button`
-    background-color: #373739;
+    background-color: ${colors.secondary};
     border: none;
-    color: #EFF3F5;
+    color: ${colors.font};
     margin: 0;
     padding: 30px 50px;
     margin-bottom: 1em;
@@ -44,7 +45,7 @@ export const BtnLink = styled.button`
 `;
 
 export const DetailsContent = styled.div`
-    background-color: #373739;
+    background-color: ${colors.secondary};
     width: 50%;
     margin: 0 auto;
     padding: 10px;
@@ -64,7 +65,7 @@ export const Container = styled.div`
     font-size: 10rem;
     text-align: center;
     margin-bottom: 10px;
-    color: rgb(58, 208, 222);
+    color: ${colors.primary};
    }
 
    p{
@@ -85,6 +86,7 @@ export const ContainerBusq = styled.div`
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+
    }
   
 `
